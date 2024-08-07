@@ -1,6 +1,8 @@
-# JavaScript Code Executor
+# Make.com JavaScript API
 
 This project enables you to execute JavaScript code on a remote server using a secure token-based authentication mechanism. The server utilizes Express.js to handle incoming POST requests containing JavaScript code, evaluates the code, and returns the result.
+You can leverage this logic in no-code automation platforms such as Make.com and Zapier to execute Javscript code without relying on a SaaS tool that charges you loads of money for it. 
+This setup can be hosted on [Render.com](https://render.com/) for as little as $7 per month. 
 
 ## How to Execute Code
 
@@ -41,3 +43,31 @@ Follow these steps to deploy and test the JavaScript Code Executor:
    result; // Should return "Hello, World!"
    ```
 7. **Send Request:** Send the request and you will receive the "Hello, World!" response.
+
+## Use AI to generate your code
+
+In case you do not want to write the code yourself, you can use the following code yourself to generate a Javscript snippet that will generate the relevant code for you so you can simply copy and paste it into your payload. 
+All you need to do is replace `[your scope]` with your actual requirements. 
+
+```
+Create a Javascript code snippet that can do the following: 
+[your scope]
+
+Ensure to return the result in a variable called "result". Here's how the return should look like:
+// Output the result
+result;
+
+Avoid the usage of console.log()
+```
+
+Here is a complete example:
+```
+Create a Javascript code snippet that can do the following: 
+Take a name in the following Format: Jannis Moore and split it into first name and last name and return them in separate fields.
+
+Ensure to return the result in a variable called "result". Here's how the return should look like:
+// Output the result
+result;
+
+Avoid the usage of console.log()
+```
